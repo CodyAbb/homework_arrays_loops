@@ -98,3 +98,15 @@ users["Erik"][:pets] << erik_new_pet
 p users["Erik"][:pets]
 
 # 10. Add another person to the users hash
+users["Cody"] = {
+    :twitter => "codyabb",
+    :lottery_numbers => [12, 14, 33, 10, 9, 11],
+    :home_town => "Edinburgh",
+    :pets => [
+      {
+        :name => "kipper",
+        :species => "dog"
+      }
+    ]
+  }
+p users["Cody"]
