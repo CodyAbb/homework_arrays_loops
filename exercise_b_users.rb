@@ -69,16 +69,17 @@ p users["Avril"][:pets][0][:species]
 # 5. Get the smallest of Erik's lottery numbers
 erik_numbers = users["Erik"][:lottery_numbers]
 p erik_numbers.sort[0]
+# p users["Erik"][:lottery_numbers].min
 
 # 6. Return an array of Avril's lottery numbers that are even
 avril_numbers = users["Avril"][:lottery_numbers]
-avril_array = []
+avril_even_numbers = []
 for num in avril_numbers
  if num % 2 == 0
-   avril_array << num
+   avril_even_numbers << num
  end
 end
-p avril_array
+p avril_even_numbers
 
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 users["Erik"][:lottery_numbers] << 7
@@ -95,6 +96,8 @@ erik_new_pet = {
 }
 
 users["Erik"][:pets] << erik_new_pet
+# users["Erik"][:pets].push({:name => "fluffy", :species => "dog"})
+
 p users["Erik"][:pets]
 
 # 10. Add another person to the users hash

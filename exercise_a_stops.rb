@@ -4,6 +4,7 @@ stops = [ "Croy", "Cumbernauld", "Falkirk High", "Linlithgow", "Livingston", "Ha
 stops << "Edinburgh Waverly"
 #2. Add "Glasgow Queen St" to the start of the array
 stops.unshift("Glasgow Queen St")
+#stops.insert(0, "Glasgow Queen St")
 #3. Add "Polmont" at the appropriate point (between "Falkirk High" and "Linlithgow")
 stops.insert(4, "Polmont")
 #4. Print out the index position of "Linlithgow"
